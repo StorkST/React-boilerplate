@@ -6,23 +6,6 @@ import Papa from "papaparse";
 class App extends React.Component {
   render() {
     const columns = ["Name", "Title", "Location", "Age", "Salary"];
-		//For future use
-    const headers = columns.map((value, key) => {
-			if (key <= 3) {
-				return {
-					name: value,
-					options: {
-						display: true
-					}
-				};
-			} else
-				return {
-					name: value,
-					options: {
-						display: false
-					}
-				};
-		});
 
     const data = [
       ["Gabby George", "Business Analyst", "Minneapolis", 30, "$100,000"],
